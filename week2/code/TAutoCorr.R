@@ -1,5 +1,8 @@
 rm(list=ls())
+require(ggplot2)
 load("../data/KeyWestAnnualMeanTemperature.RData")
+plot<-ggplot(data=ats,mapping = aes(x=Year,y=Temp))+geom_point()
+ggsave("../results/Auto_Cor_Florida_Temp.png",plot)
 yeartempall<-ats$Temp
 yeartemp_n<-ats$Temp[1:99]
 yeartemp_n1<-ats$Temp[2:100]
@@ -17,3 +20,13 @@ for(i in 1:length(corlist)){
   }
 }
 fraction<-count/length(corlist)
+cordata<-data.frame(corlist)
+g<- ggplot(cordata,aes(x=corlist))+
+  geom_histogram(position = "identity",fill="lightcoral",color="black")+
+  xlab("correlation coefficient")+
+  ylab("Count")+
+  geom_vline(xintercept = cor,linetype="twodash",color="blue")+
+  annotate(geom = "text",fontface="bold",color="blue",
+           x=0.3,y=9000,
+           label="observed value = 0.326",size = 3)
+ggsave("../results/Auto_cor_Florida_histogram.png",g)
