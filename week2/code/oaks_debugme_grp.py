@@ -3,14 +3,13 @@
 """This script finds taxa in a list of tree species that are oak trees, and saves them to a new csv file. This script excludes the header row in its search for oaks in a given dataset and produes a file containing the headers 'Genus' and 'Species'"""
 
 __appname__ = ['oaks_debugme.py']
-__author__ = 'Sarah Dobson (sld21@imperial.ac.uk)'
+__author__ = 'Awesome Aardvarks'
 __version__ = '0.0.1'
 
 ## imports ##
 import csv
 import sys
 import doctest
-import pandas as pd
 
 ## functions ##
 def is_an_oak(name):

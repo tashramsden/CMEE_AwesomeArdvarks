@@ -1,4 +1,4 @@
-# Author: Awesome Aardvark
+# Author: Awesome Aardvarks
 # Script: get_TreeHeight.R
 # Desc: Takes a csv file name from the command line. 
 #       Calculates heights of trees given distance of each tree 
@@ -33,4 +33,4 @@ readfile$Tree.Height.m <- TreeHeight(readfile$Angle.degrees, readfile$Distance.m
 name <- tools::file_path_sans_ext(basename(args))
 
 #save all data to csv file in results/
-write.csv(readfile, paste("../results/",name,"_treeheight.csv"), row.names=FALSE)
+write.csv(readfile, paste("../results/",name,"_treeheights.csv", sep=""), row.names=FALSE)
