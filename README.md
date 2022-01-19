@@ -9,7 +9,7 @@ Scripts contained in this directory were created for groupwork assignments of CM
     * get_TreeHeight.py  - Python version of get_TreeHeight.R. Script calculates tree heights of trees in a dataset
     * get_TreeHeight.R  - Script to calculate heights of trees in a dataset. More general than the TreeHeight.R script written for the individual practical.
     * oaks_debugme_grp.py - Searches for trees that are oaks. 
-    * run_get_TreeHeight.sh  - Tests get_TreeHeight.R and get_TreeHieght.py scripts
+    * run_get_TreeHeight.sh  - Tests get_TreeHeight.R and get_TreeHeight.py scripts
     * TAutoCorr.R  - Autocorrelation in Florida weather. Are temperatures of one year significantly correlated with the next year?
     * TAutoCorr.tex - LaTeX document containing write-up of results for "TAutoCorr.R" practical
 * Data: Contains files needed as inputs to certain scripts. Files are often from the master MulQuaBio git repository.
