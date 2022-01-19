@@ -1,0 +1,21 @@
+*~ 
+*.tmp
+
+.idea
+
+results/*
+!.gitkeep
+
+# python
+__pycache__/
+.pytest_cache
+*.pyc
+profires
+
+# R
+.RData
+.Rhistory
+.Rapp.history
+.Ruserdata
+.Renviron
+Rplots.pdf
