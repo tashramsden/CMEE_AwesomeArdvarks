@@ -1,5 +1,5 @@
 #!/bin/bash
-# Author: Awesome Aarvarks An 
+# Author: Awesome Aarvarks 
 # Script: run_get_TreeHeight.sh
 # Desc: test get_TreeHeight.R and get_TreeHeight.py with trees.csv
 # Arguments: 1 .csv file)
