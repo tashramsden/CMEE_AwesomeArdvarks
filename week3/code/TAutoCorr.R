@@ -2,7 +2,7 @@ rm(list=ls())
 require(ggplot2)
 load("../data/KeyWestAnnualMeanTemperature.RData")
 plot<-ggplot(data=ats,mapping = aes(x=Year,y=Temp))+geom_point()
-ggsave("../results/Auto_Cor_Florida_Temp.png",plot)
+ggsave("../results/Auto_Cor_Florida_Temp.png",plot,,width = 5.03, height = 3.08, units = "in")
 yeartempall<-ats$Temp
 yeartemp_n<-ats$Temp[1:99]
 yeartemp_n1<-ats$Temp[2:100]
@@ -29,4 +29,4 @@ g<- ggplot(cordata,aes(x=corlist))+
   annotate(geom = "text",fontface="bold",color="blue",
            x=0.3,y=9000,
            label="observed value = 0.326",size = 3)
-ggsave("../results/Auto_cor_Florida_histogram.png",g)
+ggsave("../results/Auto_cor_Florida_histogram.png",g,width = 5.03, height = 3.08, units = "in")
